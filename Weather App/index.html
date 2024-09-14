@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body class="flex items-center justify-center h-screen text-center align-middle">
+    <div class="border h-auto w-[450px] backdrop-blur-lg opacity-100 bg-white rounded-2xl shadow-lg">
+        <div class="block">
+            <img src="weatherhead.jpg" class="rounded-t-2xl">
+            <h1 class="mt-10 text-4xl font-bold text-blue-300" id="header">Weather App</h1>
+            <div class="mt-10">
+                <input type="text" id="inputText" placeholder="Enter city" class="p-4 text-center border rounded-xl border-blue-950">
+            </div>
+            <div class="flex justify-center mt-10">
+                <button onclick="getWeather()" class="block p-4 text-center text-white bg-blue-950 rounded-2xl">Get Weather</button>
+            </div>
+            <div id="weatherResult" class="mt-10 mb-10 bg-white rounded-lg w-350px">
+                <p id="temperature" class="mt-5 text-2xl font-bold text-blue-950"></p>
+                <p id="description" class="mt-5 text-2xl font-bold text-blue-950"></p>
+            </div>
+            <img src="weatherfoot.jpg" class="rounded-b-2xl">
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
